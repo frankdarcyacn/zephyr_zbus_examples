@@ -1,0 +1,17 @@
+// protocol definition
+
+syntax = "proto3";
+
+// Measurement Data
+
+message MeasurementData {
+
+    /// Unique identifier of the measurement.
+    uint32 id = 1;
+    /// Timestamp of the measurement.
+    uint32 timestamp_us = 2;
+    /// Distances in millimeters.
+    repeated uint32 distances_mm = 3;
+    /// Azimuths in milliradians.
+    repeated uint32 azimuths_mrad = 4;
+}

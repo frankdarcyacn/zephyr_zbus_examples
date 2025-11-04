@@ -1,0 +1,19 @@
+manifest:
+
+  remotes:
+
+    - name: github_zephyrproject_rtos
+      url-base: https://github.com/zephyrproject-rtos
+
+  projects:
+
+    - name: zephyr
+      remote: github_zephyrproject_rtos
+      revision: c9087bce759434bed095295c1e9a4b1a97b401ea
+      import:
+        # By using name-allowlist we can clone only the modules that are
+        # strictly needed by the application.
+        name-allowlist:
+          - cmsis_6
+          - hal_nordic
+          - nanopb

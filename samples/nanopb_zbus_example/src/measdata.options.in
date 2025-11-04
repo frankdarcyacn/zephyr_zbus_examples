@@ -1,0 +1,2 @@
+MeasurementData.distances_mm max_count:4 fixed_count:true
+MeasurementData.azimuths_mrad max_count:4 fixed_count:true
